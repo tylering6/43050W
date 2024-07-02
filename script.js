@@ -7,12 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
             submitContactForm();
         });
     }
-
-    // Add event listener for mobile menu toggle
-    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
-    }
 });
 
 
