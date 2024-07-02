@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Pictures/W Rizz Sticker.png'); /* Replace with your image file name */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Pictures/Sticker.png'); /* Replace with your image file name */
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -78,7 +78,6 @@ footer {
     padding: 10px;
     width: 100%;
     position:relative;
-    float:bottom;
 }
 
 .team-container {
@@ -113,4 +112,10 @@ form button {
     width: 100%;
     max-width: 400px;
     margin: 10px 0;
+}
+
+#instagram-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
