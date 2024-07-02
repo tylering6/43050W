@@ -114,9 +114,13 @@ form button {
     margin: 10px 0;
 }
 
-.instagram-feed,
-#instagram-media{
+#instagram-feed {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.instagram-media {
+    margin: 0 auto;
 }
