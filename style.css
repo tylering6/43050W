@@ -1,8 +1,8 @@
+* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #d3d3d3; /* Mid-tone grey background */
+    background-color: #d3d3d3;
     color: #095f7a;
-    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,13 +11,14 @@ body {
     text-align: center;
 }
 
+/* Header styles */
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Pictures/Sticker.png'); /* Replace with your image file name */
     background-size: cover;
     background-position: center;
     color: #ffffff;
     width: 100%;
-    padding: 40px 20px 80px; /* Adjusted padding for better spacing */
+    padding: 40px 20px 80px;
     text-align: center;
     position: relative;
     display: flex;
@@ -27,13 +28,13 @@ header {
 
 header .top-bar {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     top: 0;
     padding: 20px;
-    margin-right: 25px;
     box-sizing: border-box;
 }
 
@@ -43,20 +44,20 @@ header .logo {
 }
 
 header .logo img {
-    width: 90px;
-    height: 60px;
-    margin-left: 25px;
-    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -65,21 +66,50 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Mobile menu styles */
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu ul li {
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main content styles */
 main {
     padding: 20px;
     width: 100%;
     max-width: 800px;
-}
-
-footer {
-    background-color: #095f7a;
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 10px;
-    width: 100%;
-    position:relative;
 }
 
+#instagram-feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram-media {
+    margin: 0 auto;
+}
+
+/* Team container styles */
 .team-container {
     display: flex;
     flex-wrap: wrap;
@@ -98,31 +128,16 @@ footer {
     height: 150px;
     border-radius: 50%;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-}
 
-form label,
-form input,
-form textarea,
-form button {
+/* Footer styles */
+footer {
+    background-color: #095f7a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
     width: 100%;
-    max-width: 400px;
-    margin: 10px 0;
-}
-
-#instagram-feed {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.instagram-media {
-    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
 }
 
 /* Responsive styles */
@@ -137,20 +152,20 @@ form button {
     }
 
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
 
-    nav ul li {
-        margin: 5px 0;
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
     }
 
-    .team-member {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    footer {
-        position: relative;
+    nav ul {
+        display: flex;
     }
 }
