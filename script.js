@@ -11,7 +11,7 @@ function submitContactForm() {
     const contactForm = document.getElementById('contact-form');
     const formData = new FormData(contactForm);
 
-    fetch('https://script.google.com/macros/s/AKfycbxy7jFNhHOef3ie83rvkFq6_ipk1FlBYg-3KxvvwGjSYMj1YFngDhogcU59sDQ2Zd-x/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxRKbTD9xwYccskRJfxZvtMQqm4QBnF_-0xwSZNYk-fBq2uBr1aToIfCeiYDXCbQIf4/exec', {
         method: 'POST',
         body: formData
     })
