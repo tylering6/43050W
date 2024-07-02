@@ -17,3 +17,4 @@ function submitContactForm() {
     alert('Thank you for contacting us!');
     // TODO: Add actual code to handle form submission, e.g., send data to a server
 }
+
