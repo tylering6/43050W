@@ -2,6 +2,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #d3d3d3; /* Mid-tone grey background */
     color: #095f7a;
+    width: 100%;
+    max-width: 1200px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,6 +18,7 @@ header {
     background-position: center;
     color: #ffffff;
     width: 100%;
+    max-width: 1200px;
     padding: 40px 20px 80px; /* Adjusted padding for better spacing */
     text-align: center;
     position: relative;
