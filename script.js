@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
             submitContactForm();
         });
     }
+    
+    const navButton = document.querySelector('.nav-button');
+    if (navButton) {
+        navButton.addEventListener('click', toggleNavMenu);
+    }
 });
 
 
