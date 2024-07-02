@@ -74,8 +74,11 @@ nav ul li a {
 }
 
 .mobile-menu ul {
-    flex-direction: column;
-    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .mobile-menu ul li {
@@ -85,6 +88,13 @@ nav ul li a {
 .mobile-menu ul li a {
     color: #ffffff;
     text-decoration: none;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
 }
 
 /* Main content styles */
@@ -153,6 +163,10 @@ footer {
 
     nav ul {
         display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
     }
 
     .mobile-menu {
