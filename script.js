@@ -35,11 +35,11 @@ function submitContactForm() {
     });
 }
 
-function toggleMobileMenu() {
-    const mobileMenu = document.getElementById('mobileMenu');
-    if (mobileMenu.style.display === 'flex') {
-        mobileMenu.style.display = 'none';
+function toggleNavMenu() {
+    const navMenu = document.getElementById('navMenu');
+    if (navMenu.style.left === '0px') {
+        navMenu.style.left = '-250px';
     } else {
-        mobileMenu.style.display = 'flex';
+        navMenu.style.left = '0px';
     }
 }

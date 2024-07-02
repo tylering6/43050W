@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>43050W - W-Rizz - Home</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="/Pictures/Sticker.ico">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43050W - W-Rizz - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Pictures/Sticker.ico">
+</head>
 <body>
     <header>
-        <h1>Welcome</h1>
         <div class="top-bar">
-            <div class="logo">
-                <a href="home.html"><img src="/Pictures/Sticker.png" alt="W-Rizz"></a>
-                <a href="home.html" style="color: #ffffff; text-decoration: none;">43050W - W-Rizz</a>
-            </div>
-            <nav class="desktop-menu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="Engineering-Design-Process.html">The Design Process</a></li>
-                    <li><a href="Our-Tournaments.html">Tournaments</a></li>
-                    <li><a href="About-Us.html">About Us</a></li>
-                    <li><a href="Contact-Us.html">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</div>
-            <nav class="mobile-menu" id="mobileMenu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="Engineering-Design-Process.html">The Design Process</a></li>
-                    <li><a href="Our-Tournaments.html">Tournaments</a></li>
-                    <li><a href="About-Us.html">About Us</a></li>
-                    <li><a href="Contact-Us.html">Contact Us</a></li>
-                </ul>
-            </nav>
+            <button class="nav-button" onclick="toggleNavMenu()">☰</button>
         </div>
+        <h1>Welcome</h1>
     </header>
+
+    <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="design.html">Design Process</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <main>
         <section id="instagram-feed">
             <h2>Welcome! This is the official site of 43050W - W-Rizz. Here, you can find information about our team including our tournament schedule, who we are, and about us.</h2>
@@ -47,6 +34,5 @@
         <p>&copy; 2024 W Team - All Rights Reserved. </p>
         <p>Email: W-Team@mvhsrobotics.org | Call or text: 740-324-5136</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

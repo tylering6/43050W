@@ -1,4 +1,4 @@
-* Base styles */
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #d3d3d3;
@@ -49,52 +49,43 @@ header .logo img {
     margin-right: 10px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* Mobile menu styles */
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mobile-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.mobile-menu ul li {
-    margin: 10px 0;
-}
-
-.mobile-menu ul li a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.mobile-menu-toggle {
-    display: none;
+/* Navigation menu styles */
+.nav-button {
+    display: block;
     cursor: pointer;
     font-size: 24px;
     color: #ffffff;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #095f7a;
+    color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-menu a:hover {
+    background-color: #b782ec;
 }
 
 /* Main content styles */
@@ -148,38 +139,4 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    header .top-bar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .logo {
-        margin-bottom: 20px;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    .mobile-menu-toggle {
-        display: block;
-    }
-
-    .mobile-menu {
-        display: flex;
-    }
-}
-
-@media (min-width: 769px) {
-    .mobile-menu {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-    }
 }
