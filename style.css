@@ -73,13 +73,14 @@ header .logo img {
     transition: left 0.3s ease;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-top: 60px;
 }
 
 .nav-menu a {
     color: #ffffff;
     text-decoration: none;
-    padding: 15px 25px 15px;
+    padding: 10px 20px 10px;
     font-size: 18px;
 }
 
