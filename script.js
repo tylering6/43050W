@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    const navButton = document.querySelector('.nav-button');
+    const navButton = document.getElementById('navButton');
     if (navButton) {
         navButton.addEventListener('click', toggleNavMenu);
     }
