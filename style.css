@@ -28,7 +28,7 @@ header {
 
 header .top-bar {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,8 +64,8 @@ header .logo img {
 .nav-menu {
     position: fixed;
     top: 0;
-    left: -250px;
-    width: 250px;
+    left: -400px;
+    width: 400px;
     height: 100%;
     background-color: #095f7a;
     color: #ffffff;
