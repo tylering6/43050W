@@ -79,9 +79,8 @@ header .logo img {
 .nav-menu a {
     color: #ffffff;
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 15px 25px 15px;
     font-size: 18px;
-    border-bottom: 1px solid #ffffff;
 }
 
 .nav-menu a:hover {
