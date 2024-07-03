@@ -9,8 +9,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     const navButton = document.getElementById('navButton');
-    if (navButton) {
-        navButton.addEventListener('click', toggleNavMenu);
+    const closeButton = document.getElementById('closeButton');
+    const navMenu = document.getElementById('navMenu');
+
+    if (navButton && navMenu) {
+        navButton.addEventListener('click', function() {
+            navMenu.style.left = '0px';
+        });
+    }
+
+    if (closeButton && navMenu) {
+        closeButton.addEventListener('click', function() {
+            navMenu.style.left = '-350';
+        });
     }
 });
 
@@ -32,13 +43,4 @@ function submitContactForm() {
         console.error('Error submitting form:', error);
         alert('There was an error submitting the form. Please try again.');
     });
-}
-
-function toggleNavMenu() {
-    const navMenu = document.getElementById('navMenu');
-    if (navMenu.style.left === '0px') {
-        navMenu.style.left = '-250px';
-    } else {
-        navMenu.style.left = '0px';
-    }
 }
