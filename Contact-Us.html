@@ -29,22 +29,43 @@
             <section>
                 <h2>Contact Form</h2>
                 <form id="contact-form">
-                    <label for="number">Team Number:</label>
-                    <input type="text" id="number" name="number" required>
-                    <label for="school">School:</label>
-                    <input type="text" id="school" name="school" required>
-                    <label for="contact">How to contact you:</label>
-                    <input type="text" id="contact" name="contact" required>
-                    <label for="stakes">Which Stakes can you score on?</label>
-                    <input type="text" id="stakes" name="stakes" required>
-                    <label for="elevate">Can you Elevate?</label>
-                    <input type="text" id="elevate" name="elevate" required>
-                    <label for="high">How high?</label>
-                    <input type="text" id="high" name="high">
-                    <label for="record">What is your current win record? (current or average)</label>
-                    <input type="text" id="record" name="record" required>
-                    <label for="info">Anything else we should know?</label>
-                    <input type="text" id="info" name="info">
+                    <div class="form-group">
+                        <label for="number">Team Number:</label>
+                        <input type="text" id="number" name="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="school">School:</label>
+                        <input type="text" id="school" name="school" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">How to contact you:</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="stakes">Which stakes can you score on?</label>
+                        <input type="text" id="stakes" name="stakes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="elevate">Can you Elevate</label>
+                        <select id="elevate" name="elevate">
+                            <option value="Select One">Select One</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="high">How high?</label>
+                        <input type="text" id="high" name="high">
+                    </div>
+                    <div class="form-group">
+                        <label for="record">What is your current win record? (current or average)</label>
+                        <input type="text" id="reord" name="record" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="info">Anything else we should know?</label>
+                        <input type="text" id="info" name="info">
+                    </div>
+
                     <button type="submit">Submit</button>
                 </form>
             </section>

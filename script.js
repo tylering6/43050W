@@ -12,15 +12,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButton = document.getElementById('closeButton');
     const navMenu = document.getElementById('navMenu');
 
-    if (navButton && navMenu) {
+    if (navButton) {
         navButton.addEventListener('click', function() {
             navMenu.style.left = '0px';
         });
     }
 
-    if (closeButton && navMenu) {
+    if (closeButton) {
         closeButton.addEventListener('click', function() {
-            navMenu.style.left = '-350';
+            navMenu.style.left = '-400px';
         });
     }
 });
