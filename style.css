@@ -234,4 +234,24 @@ footer {
     width: 100%;
     position: sticky;
     z-index: 2;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 5px 10px;
+}
+
+.footer-message {
+    font-size: 14px;
+    color: #ffffff;
 }

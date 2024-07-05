@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="state.css">
+        <script src="state.js"></script>
+        <link rel="stylesheet" href="/public.min.css?c=v3">
+        <title>Vex Robotics Team Info</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="icon" type="image/x-icon" href="/icon.jpg">
+    </head>
+    <body>
+        <a href="../"><div id="Home"></div></a>
+        <div id="body">
+            <p id="title">State Qualifying Calculator</p> 
+            <div id="input" style="display: inline-block;">
+                <input type="text" id="inputBoxID" placeholder = "43050X">
+                <button onClick="run(document.getElementById('inputBoxID').value)">Run</button>
+            </div>
+            <div id="howuse"><a href="./info.html">How to use</a></div> 
+            <div>
+                <div id="bar">
+                    
+                </div>
+                <div id="result">
+                    <div id="progressbar"><div id="progressbarfill"></div></div>
+                    <h2 id="resultText">Team Info Appears Here!</h2>
+                    <table id="resultTable"></table>
+                    <h5>(Enter a VRC team number into the box)</h5>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
