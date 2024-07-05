@@ -42,12 +42,17 @@
                         <input type="text" id="contact" name="contact" required>
                     </div>
                     <div class="form-group">
-                        <label for="stakes">Which stakes can you score on?</label>
-                        <input type="text" id="stakes" name="stakes" required>
+                        <label for="stakes">Which stakes can you score on? <br> (Hold CTRL or SHIFT to select multiple)</label>
+                        <select id="stakes" name="stakes" multiple required>
+                            <option value="Mobile">Mobile Stakes</option>
+                            <option value="Wall">Wall Stakes</option>
+                            <option value="Alliance">Alliance Stakes</option>
+                            <option value="High">THE High Stakes</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="elevate">Can you Elevate</label>
-                        <select id="elevate" name="elevate">
+                        <select id="elevate" name="elevate" required>
                             <option value="Select One">Select One</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
@@ -55,7 +60,12 @@
                     </div>
                     <div class="form-group">
                         <label for="high">How high?</label>
-                        <input type="text" id="high" name="high">
+                        <select id="high" name="high">
+                            <option value="Select One">Select One</option>
+                            <option value="Level 1">First Rung (Level 1)</option>
+                            <option value="Level 2">Second Rung (Level 2)</option>
+                            <option value="Level 3">Third Rung (Level 3)</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="record">What is your current win record? (current or average)</label>
