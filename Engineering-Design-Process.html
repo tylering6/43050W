@@ -10,10 +10,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- for external link icon -->
         <link rel="icon" type="image/x-icon" href="/Pictures/Sticker.ico">
     </head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="top-bar">
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="top-bar">
+                    <div class="account-button" id="accountButton">
+                        <img id="profilePicture" src="default-profile.png" alt="Profile Picture">
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <a href="account-manager.html">Account Manager</a>
+                            <a href="protected.html">Protected Page</a>
+                            <button id="logoutButton">Logout</button>
+                        </div>
+                    </div>
                 <button class="nav-button" id="navButton">☰</button>
             </div>
             <h1>The Engineering Design Process</h1>
