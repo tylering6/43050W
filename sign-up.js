@@ -18,4 +18,3 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
         alert('Registration failed');
     }
 });
-
