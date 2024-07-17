@@ -18,7 +18,7 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model('User', UserSchema);
 
-app.post('/register', async (req, res) => {
+app.post('/sign-up.html', async (req, res) => {
     const { username, password } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
     const user = new User({ username, password: hashedPassword });
@@ -26,7 +26,7 @@ app.post('/register', async (req, res) => {
     res.status(201).send('User registered');
 });
 
-app.post('/login', async (req, res) => {
+app.post('/log-in.html', async (req, res) => {
     const { username, password } = req.body;
     const user = await User.findOne({ username });
     if (!user || !(await bcrypt.compare(password, user.password))) {
@@ -48,7 +48,7 @@ const authenticate = (req, res, next) => {
     }
 };
 
-app.get('/protected', authenticate, (req, res) => {
+app.get('/logged-in.html', authenticate, (req, res) => {
     res.status(200).send('This is a protected route');
 });
 

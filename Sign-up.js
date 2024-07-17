@@ -3,7 +3,7 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
     const username = document.getElementById('registerUsername').value;
     const password = document.getElementById('registerPassword').value;
 
-    const response = await fetch('https://w-rizz.mvhsrobotics.org/Sign-up.html', {
+    const response = await fetch('https://w-rizz.mvhsrobotics.org/sign-up.html', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -13,7 +13,7 @@ document.getElementById('registerForm').addEventListener('submit', async (event)
 
     if (response.ok) {
         alert('Registration successful');
-        window.location.href = 'https://w-rizz.mvhsrobotics.org/Log-in.html';
+        window.location.href = 'https://w-rizz.mvhsrobotics.org/log-in.html';
     } else {
         alert('Registration failed');
     }

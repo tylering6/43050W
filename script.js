@@ -37,7 +37,7 @@ function submitContactForm() {
     .then(response => response.json())
     .then(data => {
         console.log('Form submitted successfully', data);
-        window.location.href = 'Thank-You.html';
+        window.location.href = 'thank-you.html';
     })
     .catch(error => {
         console.error('Error submitting form:', error);
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Log out and remove token
     logoutButton.addEventListener('click', () => {
         localStorage.removeItem('token');
-        window.location.href = 'login.html';
+        window.location.href = 'https://w-rizz.mvhsrobotics.org/log-in.html';
     });
 
     // Load the user profile picture if logged in
