@@ -44,28 +44,3 @@ function submitContactForm() {
         alert('There was an error submitting the form. Please try again.');
     });
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    const accountButton = document.getElementById('accountButton');
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    const logoutButton = document.getElementById('logoutButton');
-    const profilePicture = document.getElementById('profilePicture');
-
-    // Toggle the dropdown menu when the account button is clicked
-    accountButton.addEventListener('click', () => {
-        dropdownMenu.style.display = dropdownMenu.style.display === 'none' || !dropdownMenu.style.display ? 'block' : 'none';
-    });
-
-    // Log out and remove token
-    logoutButton.addEventListener('click', () => {
-        localStorage.removeItem('token');
-        window.location.href = 'https://w-rizz.mvhsrobotics.org/log-in.html';
-    });
-
-    // Load the user profile picture if logged in
-    const token = localStorage.getItem('token');
-    if (token) {
-        const user = JSON.parse(atob(token.split('.')[1]));
-        profilePicture.src = user.profilePicture || 'default-profile.png';
-    }
-});
