@@ -55,3 +55,4 @@ app.get('/logged-in.html', authenticate, (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+

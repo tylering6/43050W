@@ -20,3 +20,4 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
         alert('Login failed');
     }
 });
+
