@@ -32,7 +32,7 @@ const { sendEmail} = require('./Node/index.js');
 function submitContactForm() {
     const contactForm = document.getElementById('contact-form');
     const formData = new FormData(contactForm);
-
+    sendEmail();
     fetch('https://script.google.com/macros/s/AKfycbwND2SkeqqDin0fBJRnLW0AVeAzqd7osSj51Ktkf2l3rV6axz1kWM7wOztaCWQVK_pn/exec', {
         method: 'POST',
         body: formData
@@ -46,5 +46,5 @@ function submitContactForm() {
         console.error('Error submitting form:', error);
         alert('There was an error submitting the form. Please try again.');
     });
-    sendEmail();
+    
 }
